@@ -1,0 +1,50 @@
+<!-- 데스크탑용 헤더 -->
+<header class="header">
+  <div class="header-inner">
+    <!-- 로고 -->
+    <h1 class="logo">
+      <a onclick="movePage('../pages/main.html')">
+        <img src="../img/logo.png" alt="이음시스템즈" />
+      </a>
+    </h1>
+    <!-- GNB 메뉴 -->
+    <ul class="gnb">  
+      <li><a onclick="movePage('../pages/company.html')" class="gnb-hover">Company</a></li>
+      <li><a onclick="movePage('../pages/business.html')" class="gnb-hover">Our Business</a></li>
+      <li><a onclick="movePage('../pages/history.html')" class="gnb-hover">History</a></li>
+      <li><a onclick="movePage('../pages/recruit.html')" class="gnb-hover">Recruit</a></li>
+    </ul>
+    <!-- 메뉴 버튼 -->
+    <div class="gnb-btn">
+      <span class="top"></span>
+      <span class="mid"></span>
+      <span class="bot"></span>
+    </div>
+  </div>
+</header>
+
+<!-- 모바일용 헤더 -->
+<header class="mob-header">
+  <div class="header-inner">
+    <h1 class="logo">
+      <a onclick="movePage('../pages/main.html')">
+        <img src="../img/logo.png" alt="이음시스템즈" />
+      </a>
+    </h1>
+    <div class="gnb-btn">
+      <span class="top"></span>
+      <span class="mid"></span>
+      <span class="bot"></span>
+    </div>
+  </div>
+  <div class="mob-gnb-wrap" style="display:none;">
+    <div class="inner" style="right: 0%;">
+      <ul>
+        <li><a onclick="movePage('../pages/company.html')" class="gnb-hover">Company</a></li>
+        <li><a onclick="movePage('../pages/business.html')" class="gnb-hover">Our Business</a></li>
+        <li><a onclick="movePage('../pages/history.html')" class="gnb-hover">History</a></li>
+        <li><a onclick="movePage('../pages/recruit.html')" class="gnb-hover">Recruit</a></li>
+      </ul>
+    </div>
+  </div>
+</header>

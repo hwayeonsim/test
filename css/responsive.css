@@ -1,0 +1,965 @@
+/*  
+==========================================================
+공통 css 시작
+==========================================================
+
+*/
+
+@media screen and (max-width:1600px){
+    .container {
+        width: 84%;
+    }
+    /*      채용절차 부분 나중에 취합 예정      */
+
+     .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row{
+        gap: 70px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row::before{
+        display: none;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-column{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-column .procedure-item{
+        width: 100%;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info .job-list li {
+        width: 100%;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info .job-list li:nth-last-child(2) {
+        margin-bottom:20px;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .section-main2 .container {
+        width: 88%;
+    }
+    .section-main3 .container {
+        width: 88%;
+    }
+    .section-main4 .container {
+        width: 88%;
+    }
+    .section-main3 .depart-content .depart-item .circle .inner {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .section-main3 .depart-content .depart-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        /* width: 360px; */
+        margin-top: 80px;
+    }
+    .section-main3 .depart-content .depart-item .circle .inner .depart-title {
+        font-size: 2.8rem;
+        line-height: 40px;
+        height: 48%;
+    }
+    .section-main3 .depart-content .depart-item .circle .inner .depart-desc {
+        font-size: 1.8rem;
+        line-height: 1.6;
+        margin-top: -60px;
+    }
+    .section-main3 .depart-content .depart-item .circle{
+        width: 360px;
+        height: 500px;
+    }
+   
+   /*     비즈니스 주요파트너 부분        */
+   .sub-tab-content.partners .section-detail .content-box .partners-list{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sub-tab-content.partners .section-detail .content-box .partners-list li img{
+        width: 84%;
+    }
+    .sub-tab-content .section-detail .content-box{
+        flex-direction: column;
+    }
+    .sub-tab-content .section-detail .content-box .content-title{
+        width: 100%;
+        flex: 0;
+        margin-bottom: 20px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*      채용절차 부분 나중에 취합 예정      */
+
+     /* .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row{
+        display: none;
+    }
+
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row-back{
+        display: block;
+    }
+
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row-back img{
+        width: 100%;
+    } */
+
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        width: 100%;
+    }
+    .sub-tab-content {
+        padding:120px 6%
+    }
+
+     /*     비즈니스 주요파트너 부분        */
+   .sub-tab-content.partners .section-detail .content-box .partners-list{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*      채용절차 부분 나중에 취합 예정      */
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row{
+        display: none;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row-back{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-row-back img{
+        width: 100%;
+    } 
+}
+
+
+/*      header-style        */
+@media screen and (max-width:1200px) {
+    .header {
+        display: none;
+    }
+    .mob-header {
+        display: block;
+        width: 100%;
+        height: 80px;
+        background: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .mob-header .header-inner {
+        width: 100%;
+        height: 100%;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background: transparent;
+    }
+    .mob-header .header-inner .logo {
+        width: auto;
+        position: relative;
+        cursor: pointer;
+    }
+    .mob-header .header-inner .logo > a > img {
+        height: 47px;
+        object-fit: contain;
+        width: 100%;
+    }
+   .gnb-btn {
+        position: relative;
+        width: 28px;
+        background: transparent;
+        display: block;
+        cursor: pointer;
+        z-index: 999;
+        visibility: visible;
+        height: 24px;
+    }
+    .gnb-btn > span {
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transition: 0.7s;
+    }
+    .gnb-btn > span.top {
+        transform: translateY(-15px);
+        left: 0;
+        top: 17px;
+    }
+    .gnb-btn > span.mid {
+        transform: translateY(15px);
+        left: 0;
+        top: -2.5px;
+    }
+    .gnb-btn > span.bot {
+        top: 23px;
+    }
+   .gnb-btn.active > span {
+        background: #fff;
+    }
+    .mob-gnb-wrap {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.54);
+        z-index: 99;
+        display: none;
+    }
+    .mob-gnb-wrap .inner {
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        top: 0;
+        background: #24221F;
+        padding: 0 20px;
+    }
+    .inner > ul {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .mob-gnb-wrap .inner > ul > li {
+        width: 100%;
+        cursor: pointer;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .mob-gnb-wrap .inner > ul > li > a {
+        font-family: 'PoppinsR';
+        font-size: 18px;
+        color: #fff;
+    }
+    .gnb-btn.active .top {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .gnb-btn.active .mid {
+        opacity: 0;
+    }
+    .gnb-btn.active .bot {
+        transform: rotate(-45deg) translate(3px, -3px);
+    }
+    .wrap { 
+        position: relative; 
+        min-width: 320px; 
+        margin: 0 auto; 
+        overflow-x: hidden; 
+    }
+
+    /*     footer-style    */
+    .footer .footer-inner {
+    padding: 50px 5%;
+    }
+    .footer .footer-inner .bottom .f-list li{
+    line-height: 35px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /*      header-style        */
+    .mob-header .header-inner .logo > a > img {
+        height: 37px;
+        object-fit: contain;
+        width: 100%;
+    }
+    .mob-header .header-inner {
+        padding: 0 20px;
+    }
+    .footer .footer-inner .bottom .f-list li{
+        position: relative;
+        font-size: 14px;
+        line-height: 28px;
+        color: #999;
+    }
+    .web-link {
+        display: none;
+    }
+}
+
+
+/*
+=========================================================
+Main Page
+=========================================================
+*/
+
+@media screen and (max-width:1400px){
+    .section-main3 {
+        height:auto;
+    }
+    .section-main3 .depart-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-main3 .depart-arrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .section-main1 .section-title.title2 {
+        margin-top: 2%;
+    }
+    .section-main1 {
+        padding: 230px 0 430px;
+    }
+    .section-main1 .main-content{
+        top: 45%;
+    }
+    .history-txt > span{
+        font-size: 5.5rem;
+        color: #fff;
+    }
+    .history-num{
+        padding-left: 5px;
+    }
+    .history-txt {
+        padding: 10px;
+    }
+    .history-txt > span{
+        font-size: 3rem;
+        color: #fff;
+    }
+    .point-icon {
+        width: 100%;
+        height: 80%; 
+        position: absolute; 
+        top: -240px;
+        z-index: 99;
+        overflow: hidden;
+        /* border: 5px solid #385CAE; */
+        cursor: pointer;
+        text-align: center;
+    }
+    .point-icon img{
+        width: 95%;
+        height: 95%;
+    }
+    .blink{
+        display: none;
+    }
+    .section-main4 .moto-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .section-main4 .moto-content .moto-item{
+        padding: 50px 30px 50px 30px;
+        width: 100%;
+    }
+    .section-main4 .section-sub-title{
+        width: 100%;
+        font-size: 37px;
+    }
+    .section-main4 .moto-content .moto-item .moto-list li {
+        font-size: 1.8rem;
+        text-align: center;
+        padding-left: 0;
+    }
+    .section-main4 .moto-content .moto-item .moto-list li::before {
+        display: none;
+    }
+    .section-main4 .moto-content .moto-img{
+        display: none;
+    }
+    .section .main-text{
+        margin-left: 555px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .main-top > .text-box {
+        padding: 0 20px;
+    }
+    .main-top > .text-box > h3 {
+        width: 100%;
+        padding: 0 2%;
+        font-size: 3.4rem;
+        line-height: 1.8;
+    }
+    .main-top > .text-box > h2 {
+        width: 100%;
+        font-size: 3.4rem;
+        padding: 0 2%;
+        line-height: 1.6;
+    }
+    .main-top > .text-box > p {
+        width: 100%;
+        font-size: 2.3rem;
+        line-height: 1.6;
+        padding: 0 2%;
+    }
+    .section-main2 .bg .bg-left,.section-main1 .bg .bg-right{
+        background-color: #FFFFFF;
+    }
+    .section .main-text{
+        position:relative;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .section-main4 .container{
+        padding-bottom: 80px;
+    }
+    .section-main4 .moto-content .moto-img img{
+        object-fit: cover;
+    }
+}
+
+@media  screen and (max-width: 850px){
+    .section-main1 {
+        height: auto;
+    }
+    .section-main2 {
+        
+    }
+    .section-main1 .main-content{
+        position: relative;
+        top:0;
+        left:0;
+        margin-top:60px;
+        transform: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-main1 .main-content .main-item .main-keyword{
+        font-size: 2.5rem;
+        line-height: 62px;
+    }
+    .section-main1 .main-content .main-item .main-keyword-eng{
+        font-size: 26px;
+        line-height: 61px;
+    }
+    .section-main1 .main-content .main-item{
+        padding: 2% 0;
+        width: 370px;
+        border: 0;
+    }
+    .section-main1 .main-content .main-item .main-num{
+        font-size: 24px;
+    }
+    .section-main1 .main-content .main-item .main-num > span{
+        font-size: 8rem;
+    }
+    .section-main1 .main-content .main-item:last-child{
+        padding-left: 0;
+    }
+     .section-main1 .main-img1{
+        top: 750px;
+        margin-left: 350px;
+        width: 460px;
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    .section-main4 .moto-content .moto-item{
+        padding: 50px 20px 50px 20px;
+    }
+     .section-main4 .moto-content .moto-item .moto-list li {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    .section-main4 .moto-content .moto-item .moto-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    .section-main1 {
+        padding: 60px 0 60px 0;
+    }
+    .section-main1 .main-content{
+        flex-direction: column;
+        align-content: center;
+    }
+    .section-main1 .main-content .main-item{
+        border: none;
+        padding: 4%;
+    }
+      .section-main1 .main-img1{
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px){
+    .main-top > .text-box {
+        top: calc(40% - 100px);
+    }
+    .main-top > .text-box > h3 {
+        width: 100%;
+        padding: 0 2%;
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+    .main-top > .text-box > h2 {
+        width: 100%;
+        font-size: 2.6rem;
+        padding: 0 2% 20px 2%;
+        line-height: 1.6;
+    }
+    .main-top > .text-box > p {
+        width: 100%;
+        font-size: 2.1rem;
+        line-height: 1.6;
+        padding: 0 2%;
+    }
+    .section-main1 > .container{
+        flex-direction: column-reverse;
+        padding: 0 8%;
+    }
+    .section-main2 .main-img .main-img3{
+        display: none;
+    }
+    .section-main2 .main-img .main-img2 img{
+        width: 130%;
+        object-fit: contain;
+    }
+    .section-main1 .section-title.title1{
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-top: 5%;
+        text-align: center;
+        padding : 0 2%
+    }
+    .section-main1 .section-title.title2{
+        font-size: 2.6rem;
+        line-height: 1.6;
+        text-align: center;
+        padding : 0 2%
+    }
+    .section-main1 .main-content .main-item .main-keyword-eng{
+        font-size: 18px;
+        line-height: normal;
+    }
+    .section-main1 .main-content .main-item .main-keyword{
+        font-size: 20px;
+        line-height: normal;
+    }
+    .section-main1 .main-content .main-item .main-num > span{
+        font-size: 7.6rem;
+        margin-right: 0;
+    }
+    .section-main2, .section-main3, .section-main4{
+        padding: 120px 0px 0px;
+    }   
+}
+
+@media  screen and (max-width:600px) {
+    .section-sub-title, .section-title,.section-main4 .section-sub-title{
+        font-size: 24px;
+        word-break: keep-all;
+        line-height: 35px;
+    }
+    .section-main2{
+        height: 940px;
+    }
+    .section-main2 .section-img{
+        height: 500px;
+    }
+    .section-main2 .section-title{
+        font-size: 24px;
+        word-break: keep-all;
+        width: 100%;
+        line-height: 36px;
+        margin-bottom: 67px;    
+    }
+    .section-main2 .main-text .section-sub-title{
+        font-size: 24px;
+        line-height: 36px;
+        width: 100%;
+    }
+    .growth-img img{
+        display: none;
+    }
+    .history-num {
+        top: -30px;
+        font-size: 2.3rem;
+    }
+    .history-txt span {
+        display: none;
+    }
+    .history-txt-mo {
+        display: block;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    .counter2 {
+        font-size: 2.6rem;
+    }
+    .section-main3 .section-sub-title{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 0px; 
+    }
+    .section-main3 .section-title{
+        font-size: 24px;
+        word-break: keep-all;
+        width: 100%;
+        line-height: 36px;
+        margin-bottom: 67px;    
+    }
+    .section-main4 .section-title{
+        font-size: 24px;
+        line-height: 36px;
+        margin: 15px 0 80px 0;
+    }
+}
+
+
+/*
+=========================================================
+서브페이지 공통
+=========================================================
+*/
+
+@media screen and (max-width:1200px) {
+    .sub-tab-content .section-detail .content-box .role-list .role-item {
+        width: 100%;
+    }
+    .sub-tabs {
+        width: calc(80vw + 200px);
+    }
+    .sub-tab {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .wrap{
+        padding: 0;
+    }
+    .sub-top > .text-box{
+        width: 40%;
+    }
+    .main-title{
+        word-break: keep-all;
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+    .body-title,.content-desc{
+        width: 100%;
+        line-height: 30px;
+    }
+    .sub-tabs{
+        width: 100%;
+        height: 85px;
+    }
+    .sub-tab {
+        max-width: 50%;
+        font-size: 2rem;
+    }
+    .sub-tab-content{
+        padding: 120px 5%;
+    }
+    .sub-tab-content .section-detail .content-box .role-list .role-item .role-dept { 
+        font-family: 'NanumSquareNeoB';
+        line-height: 35px;
+    }
+    .sub-tab-content .section-detail .content-box .role-list .role-item .role-desc { 
+        margin-top: 10px;
+        line-height: 24px;
+    }
+    .sub-tab-content .section-detail .content-box .role-list .role-item .content-num {
+        top: 50px;
+        left: 5px;
+    }
+    .sub-tab-content .section-detail .content-box .role-list {
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+    .sub-tab-content .section-detail .content-box .role-list .role-item:last-child{
+        padding: 30px 0px 30px 50px;
+    }
+    .sub-tab-content .section-detail .content-box .role-list .role-item:nth-child(-n+2) {
+        border-top: none;
+    }
+    .sub-title {
+        word-break: keep-all;
+        font-size: 2.6rem;
+    }
+}
+
+/*
+=========================================================
+Subpage.html
+=========================================================
+*/
+
+@media screen and (max-width:1200px) {
+    /*      about-html       */
+    .sub-tab-content .section-detail .history-wrapper .history-images {
+    display: none;
+    }
+    .sub-tab-content .section-intro .leadership-img {
+        display: none;
+    }
+    .sub-tab-content .section-intro .leadership-imgback {
+        display: none;
+    }
+    .sub-tab-content .section-intro .leadership-imgtab {
+        display: block;
+        width: 100%;
+        margin: 100px 0;
+    }
+    .sub-tab-content .section-intro .leadership-imgtab img {
+        width: 100%;
+    }
+    .core-values {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .core-values .core-value-item {
+        width: 100%;
+        height: 100%;
+        padding: 20px 20px 20px 20px;
+    }
+
+    /*      business-html       */
+    .core-business{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /*      recruit-html       */
+    .sub-tab-content .section-detail .content-box .benefit-list .benefit-item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0px 0px 50px 0px;
+        margin-bottom: 50px;
+    }
+    .sub-tab-content .section-detail .content-box .benefit-list .benefit-item-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    .sub-tab-content .section-detail .content-box .benefit-list{
+        margin-top: 67px;
+    }
+    .sub-tab-content .section-detail .banner{
+        margin-left: 0px;
+        height: 260px;
+    }
+    .sub-tab-content .section-detail .banner .banner-txt{
+        top: 44px;
+        left: 60px;
+        width: 77%;
+        font-size: 26px;
+        line-height: 44px;
+    }
+    .sub-tab-content .section-detail .banner .btn {
+        bottom: 44px;
+        left: 60px; 
+    }
+     .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group{
+        margin-top: 100px;
+     }
+
+     .sub-tab-content .section-detail .content-box {
+        display: block;
+        padding: 100px 0px 0px 0px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group{
+        margin-top: 67px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    /*      about-html       */
+    .sub-tab-content .section-detail .organization {
+        margin-top: 80px;
+    }
+    .sub-tab-content .section-detail .organization img{
+        display: none;
+    }
+    .sub-tab-content .section-detail .organization .organization-back{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }  
+    .sub-tab-content .section-detail .career-levels img{
+        display: none;
+    }
+    .sub-tab-content .section-detail .career-levels .levels-back{
+        margin-top: 60px;
+        display: block;
+        width: 100%;
+    }
+
+    /*      recruit-html       */
+    .sub-tab-content.People .section-detail .content-box .recruit-img{
+        display: none;    
+    }
+    .sub-tab-content.People .section-detail .content-box .recruit-back{
+        display: block;
+        width: 100%;
+    }
+    .sub-tab-content.People .section-detail .content-box .recruit-back img{
+        width: 100%
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    /*      about-html       */
+    .sub-tab-content .section-intro .leadership-img {
+        display: none;
+    }
+    .sub-tab-content .section-intro .leadership-imgtab {
+        display: none;
+    }
+    .sub-tab-content .section-intro .leadership-imgback {
+        display: block;
+        width: 100%;
+        margin: 120px 0 100px;
+    }
+    .sub-tab-content .section-detail .content-box .content-map::after {
+        font-size: 1.6rem;
+        line-height: 32px;
+        padding: 35px 35px 59px 32px;
+        word-break: keep-all;
+    }
+
+    /*      recruit-html       */    
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        gap: 26px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info .job-subtitle {
+        font-size: 2.4rem;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info .job-list{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    /*      about-html       */
+    .core-values {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .core-values .core-value-item .core-value-list li {
+        font-family: 'NanumSquareNeoR';
+        line-height: 25px;
+        letter-spacing: -0.20px;
+        color: #333;
+        word-break: keep-all;
+    }
+    .sub-tab-content .section-intro .content-banner{
+        display: none;
+    }   
+    .sub-tab-content .section-detail .content-box .role-list{
+        display: block;
+        width: 100%;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+    }
+    .sub-tab-content .section-detail .content-box .role-list .role-item:nth-child(-n+1),
+    .sub-tab-content .section-detail .content-box .role-list .role-item{
+        border-top: none;
+        padding:  30px 0px 30px 50px;
+        width: 100%;
+    }
+    .sub-tab-content .section-detail .history-wrapper .history-content .history-item{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .sub-tab-content .section-detail .history-wrapper .history-content .history-item ul li{
+        line-height: 25px;
+        word-break: keep-all;
+        margin-bottom: 20px;
+        font-size: 1.6rem;
+    }
+    .sub-tab-content .section-detail .history-wrapper .history-content {
+        position: relative;
+        padding-left: 50px;
+    }
+    .sub-tab-content .section-detail .history-wrapper .history-content::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: #dbdbdb;
+    }
+    .sub-tab-content .section-intro .leadership-imgback {
+        margin: 80px 0;
+    }
+
+    /*      business-html       */
+    .core-business{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sub-tab-content.partners .section-detail .content-box .partners-list{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sub-tab-content.partners .section-detail .content-box .partners-list li img{
+        width: 60%;
+    }
+
+    /*      recruit-html       */
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-text{
+        line-height: 30px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group{
+        margin-top: 67px;
+     }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-column .procedure-txt .role-desc{
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-nb,
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-name{
+        font-size: 2.8rem;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .procedure-group .procedure-column .procedure-item{
+        padding: 20px 20px;
+    }
+    .sub-tab-content .section-detail .content-box .benefit-list .benefit-item .benefit-desc{
+        font-size: 1.6rem;
+        line-height: 25px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info_1 {
+        padding-bottom: 18px;
+    }
+    .sub-tab-content.RecruitInfo .section-detail .content-box .job-group .job-content .job-info .job-list li{
+        margin-right: 0px;
+    }
+    .sub-tab-content .section-detail .banner .banner-txt{
+        font-size: 19px;
+        top: 26px;
+        left: 34px;
+        white-space: initial;
+        word-break: keep-all;
+        line-height: 30px;
+    }
+    .sub-tab-content .section-detail .banner .btn{
+        left: 43px;
+        bottom: 26px;
+        width: 230px;
+        height: 52px;
+    }
+
+}
